@@ -1,0 +1,359 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 150vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(208,206,195,.5),rgba(208,206,195,.5)),url(image/الكعبة.jpg);
+    background-position: center ;
+    background-size: cover ;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+nav img{
+    
+    width: 250px;  
+}
+.nav-links{
+    
+    flex:1;
+    text-align: right;   
+}
+.nav-links ul li{
+    
+    list-style: none;  
+    display: inline-block;
+    padding: 8px 12px; 
+    position: relative;
+}
+.nav-links ul li a{
+    
+    color: #fff;
+    text-decoration: none ;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width:100%; 
+
+} 
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    background: relative;
+    cursor: pointer;
+}
+.hero-btn:hover { 
+    border : 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .fa{
+
+    display: none;
+}
+/* styles.css */
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 200px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #929090;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:#f44336 ;
+  }                                                                   
+/* style.css */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  .search-bar button {
+    padding: 8px 12px;
+    background-color: #929090;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+   
+  }
+/*-------- 
+@media(max-width: 700px)
+{
+    .test-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    } 
+}
+.nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+
+-------*/
+
+nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+.nav-links ul{
+    padding: 30px;
+} 
+    /*-------- paints -------*/
+
+   /* .Paints{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+        background-image: linear-gradient(rgba(208,206,195,.5),rgba(208,206,195,.5)),url(image/الكعبة.jpg);
+        background-position: center ;
+        background-size: cover ;
+    }
+    h1{
+        font-size: 36px;
+        font-weight: 600;
+    }
+    p{
+        color: #777;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+/*-------- paints row -------*.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+/*-------- paints row design -------*/
+.About-col{
+
+    flex-basis: 31%;
+    background: #012e19;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight:600;
+    margin: 10px 0;
+}
+.About-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+
+}
+/* styles.css */
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form {
+    width: 300px;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background: #929090; ;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background: #f44336;
+  }
+  
+  .message {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .message a {
+    color: #4caf50;
+  }
+ 
+
+ /*-----/* styles.css */
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+  }
+  
+  .form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .btn {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4caf50;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .btn span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  
+  .btn:hover span {
+    opacity: 0;
+  }
+  
+  .message {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .message a {
+    color: #4caf50;
+    text-decoration: none;
+  }
+  
+  .message a:hover {
+    text-decoration: underline;
+  }
+  .dashbourd {
+    background-image: url("image/لقطة\ شاشة\ 2024-04-20\ 191620.png");
+    background-size: cover;
+    background-position: center;
+  }
+  --- Global -------*/
+ 
+ 
